@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #000;
+}
+
+/* navbar */
+nav {
+  padding: 7px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+}
+nav .brand span a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+nav .brand span {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+nav .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  list-style-type: none;
+  font-size: 17px;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+nav .navbar ul li a:hover {
+  color: #818181;
+  transition: color 0.15s ease;
+}
+nav .navbar ul li .bar-bottom::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-bottom: 2.5px solid #818181;
+  border-radius: 20px;
+  padding-bottom: 3px;
+  margin-bottom: -5.5px;
+}
+nav .navbar ul li a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  border-bottom: 2.5px solid #818181;
+  border-radius: 20px;
+  padding-bottom: 3px;
+  margin-bottom: -5.5px;
+}
+nav .navbar ul li a:hover::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-bottom: 2.5px solid #818181;
+  border-radius: 20px;
+  padding-bottom: 3px;
+  margin-bottom: -5.5px;
+  transition: width 0.15s linear;
+}
+.selected-navbar {
+  color: #818181 !important;
+}
+
+/* main */
+main {
+  width: 93%;
+  padding: 10px;
+  margin: 30px auto;
+  color: whitesmoke;
+}
+main .title-main {
+  padding: 10px;
+  font-size: 36px;
+  font-weight: 800;
+  border-left: 4px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+main .body-main {
+  padding: 10px 16px;
+}
+main .body-main a {
+  display: inline-block;
+  padding: 13px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 15px;
+  font-weight: 700;
+  transition: background-color 0.35s ease, color 0.2s ease 0.15s;
+}
+main .body-main a .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .body-main a .main span {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+main .body-main a .main i {
+  font-size: 28px;
+}
+main .body-main a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+main .table-main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+main .table-main table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+main .table-main table thead {
+  background-color: #c11c1c;
+  color: black;
+  font-size: 1.5rem;
+}
+main .table-main table thead th {
+  padding: 17px 15px;
+}
+main .table-main table tbody td {
+  padding: 20px 15px;
+}
+main .table-main table tbody tr:last-child {
+  border-bottom: 3px solid #c11c1c;
+}
+main .table-main table tbody tr td a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+main .table-main table tbody tr td .btn {
+  padding: 8px 12px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+main .table-main table tbody .content-table:nth-child(odd) {
+  background-color: black;
+  color: whitesmoke;
+}
+main .table-main table tbody .content-table:nth-child(even) {
+  background-color: whitesmoke;
+  color: black;
+}
+main .table-main table tbody .content-table:nth-child(even) .btn {
+  background-color: black;
+  color: whitesmoke;
+}
+main .table-main table tbody .content-table:hover {
+  background-color: #8c8c8c;
+  color: black;
+}
+main .table-main table tbody .content-table td .btn:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+main .table-main table tbody .content-table:nth-child(even) td .btn:hover {
+  color: black;
+  background-color: whitesmoke;
+}
